@@ -1,6 +1,6 @@
 from typing import List
 
-def merge(left: List, right: List):
+def merge(left: List[int], right: List[int]) -> List[int]:
     n = len(left) + len(right)
     result = []
 
@@ -14,7 +14,7 @@ def merge(left: List, right: List):
     return result
 
 
-def merge_sort(L: List) -> List:
+def merge_sort(L: List[int]) -> List[int]:
     if len(L) < 2:
         return L
     else:
@@ -23,7 +23,7 @@ def merge_sort(L: List) -> List:
         right = merge_sort(L[middle:])
         return merge(left, right)
 
-
+# Test cases
 case_1 = []
 case_2 = [1]
 case_3 = [1, 3, 54215, 2, 4, 245, 12, 51, 8, 51, 6, 4, 3]
