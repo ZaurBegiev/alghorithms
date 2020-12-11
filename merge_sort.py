@@ -28,5 +28,5 @@ case_1 = []
 case_2 = [1]
 case_3 = [1, 3, 54215, 2, 4, 245, 12, 51, 8, 51, 6, 4, 3]
 
-for case in (case_1, case_2, case_3)
+for case in (case_1, case_2, case_3):
     print(merge_sort(case))
